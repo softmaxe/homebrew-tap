@@ -5,23 +5,23 @@ class Beaver < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/softmaxe/beaver/releases/download/v1.0.0/beaver-v1.0.0-aarch64-apple-darwin.tar.gz"
-      sha256 "12fb3b88a7367796c25ce00e9393ad6d9e4755ce867d20115622fb0c8148eda2"
+      url "https://github.com/softmaxe/beaver/releases/download/v1.0.1/beaver-v1.0.1-aarch64-apple-darwin.tar.gz"
+      sha256 "aeba341d1682a421c48a555c0c732f2948f3adb222917d3ae1f366d744fb4b9e"
     end
     on_intel do
-      url "https://github.com/softmaxe/beaver/releases/download/v1.0.0/beaver-v1.0.0-x86_64-apple-darwin.tar.gz"
-      sha256 "2a9b84879191d15a30eddbb9d338b6e4b1a0eaa5e902a5c671c75a7b43930773"
+      url "https://github.com/softmaxe/beaver/releases/download/v1.0.1/beaver-v1.0.1-x86_64-apple-darwin.tar.gz"
+      sha256 "a6a68beb5d2cd9787564eb3f310b5af4a5cab8e0bef84f3111595fdb931e8731"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/softmaxe/beaver/releases/download/v1.0.0/beaver-v1.0.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "30194f3908ae27a9f4f13b2fb42fb63b6fc343d37e1a3ce53831466bce8289dc"
+      url "https://github.com/softmaxe/beaver/releases/download/v1.0.1/beaver-v1.0.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "fad64026aef4a83b747e59707ccabfd690efe79326b8ffc7a2d5e0f4a57e104d"
     end
     on_intel do
-      url "https://github.com/softmaxe/beaver/releases/download/v1.0.0/beaver-v1.0.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "520bed224a9292e8cfa16689b69b88df4baec299fff342aa58616ceb9e961d5c"
+      url "https://github.com/softmaxe/beaver/releases/download/v1.0.1/beaver-v1.0.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "df7e68b110f843f2b6c0fdd7895c41ed49a81ff495f4388d39bd320a8f343326"
     end
   end
 

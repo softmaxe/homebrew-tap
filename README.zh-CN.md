@@ -7,35 +7,39 @@
 
 由 softmaxe 维护的 Homebrew tap。
 
-这个 tap 用来分发预编译的二进制包。每个 formula 对应一个独立仓库的 release，工具的具体用法和介绍以各自仓库为准。
+这个 tap 用来分发预编译的二进制包。每个 formula 或 cask 对应一个独立仓库的 release，工具的具体用法和介绍以各自仓库为准。
 
 ## 已收录
 
-| Formula | 仓库 |
-| --- | --- |
-| `beaver` | [softmaxe/beaver](https://github.com/softmaxe/beaver) |
+| Package | 类型 | 仓库 |
+| --- | --- | --- |
+| `beaver` | formula | [softmaxe/beaver](https://github.com/softmaxe/beaver) |
+| `agent-usage-bar` | cask | [softmaxe/agent-usage-bar](https://github.com/softmaxe/agent-usage-bar) |
 
-后续新增 formula 时在此表追加即可，tap 本身不需要额外配置。
+后续新增包时在此表追加即可，tap 本身不需要额外配置。
 
 ## 安装
 
-先 tap，再安装需要的 formula：
+先 tap，再安装需要的包：
 
 ```bash
 brew tap softmaxe/tap
 brew install <formula>
+brew install --cask <cask>
 ```
 
 例如：
 
 ```bash
 brew install beaver
+brew install --cask agent-usage-bar
 ```
 
 也可以不先 tap：
 
 ```bash
 brew install softmaxe/tap/<formula>
+brew install --cask softmaxe/tap/<cask>
 ```
 
 更新：
@@ -43,6 +47,7 @@ brew install softmaxe/tap/<formula>
 ```bash
 brew update
 brew upgrade <formula>
+brew upgrade --cask <cask>
 ```
 
 验证：
@@ -50,11 +55,12 @@ brew upgrade <formula>
 ```bash
 brew test <formula>
 <formula> --help
+brew list --cask <cask>
 ```
 
 ## 工作方式
 
-每个 `Formula/<name>.rb` 指向对应仓库 release 里的压缩包和 `SHA256`。`brew install` 时会根据系统和架构下载对应包，校验后链接到 Homebrew 前缀，不需要在本机编译。
+每个 `Formula/<name>.rb` 或 `Casks/<name>.rb` 指向对应仓库 release 里的压缩包和 `SHA256`。`brew install` 时会根据系统和架构下载对应包，校验后链接到 Homebrew 前缀，不需要在本机编译。
 
 版本号从 release 链接中推断，与上游标签保持一致。
 

@@ -7,35 +7,39 @@
 
 Homebrew tap for projects maintained by softmaxe.
 
-This tap distributes prebuilt binaries via Homebrew. Each formula tracks releases from its own repository. For usage and details of a specific tool, see that tool's repository.
+This tap distributes prebuilt binaries via Homebrew. Each formula or cask tracks releases from its own repository. For usage and details of a specific tool, see that tool's repository.
 
-## Formulae
+## Packages
 
-| Formula | Repo |
-| --- | --- |
-| `beaver` | [softmaxe/beaver](https://github.com/softmaxe/beaver) |
+| Package | Type | Repo |
+| --- | --- | --- |
+| `beaver` | formula | [softmaxe/beaver](https://github.com/softmaxe/beaver) |
+| `agent-usage-bar` | cask | [softmaxe/agent-usage-bar](https://github.com/softmaxe/agent-usage-bar) |
 
-Add more rows here as new formulae land. No other setup is needed for the tap itself.
+No other setup is needed for the tap itself.
 
 ## Install
 
-Tap once, then install any formula from this tap:
+Tap once, then install any package from this tap:
 
 ```bash
 brew tap softmaxe/tap
 brew install <formula>
+brew install --cask <cask>
 ```
 
 For example:
 
 ```bash
 brew install beaver
+brew install --cask agent-usage-bar
 ```
 
 You can also install without tapping first:
 
 ```bash
 brew install softmaxe/tap/<formula>
+brew install --cask softmaxe/tap/<cask>
 ```
 
 Update:
@@ -43,6 +47,7 @@ Update:
 ```bash
 brew update
 brew upgrade <formula>
+brew upgrade --cask <cask>
 ```
 
 Verify:
@@ -50,14 +55,15 @@ Verify:
 ```bash
 brew test <formula>
 <formula> --help
+brew list --cask <cask>
 ```
 
 ## How it works
 
-Each `Formula/<name>.rb` points to a GitHub release archive and its `SHA256`. On `brew install`, Homebrew downloads the archive that matches your OS and CPU, verifies the checksum, and links the binary into your prefix. No build toolchain is required on your machine.
+Each `Formula/<name>.rb` or `Casks/<name>.rb` points to a GitHub release archive and its `SHA256`. On `brew install`, Homebrew downloads the archive that matches your OS and CPU, verifies the checksum, and links the binary or app into your prefix. No build toolchain is required on your machine.
 
 Versions are inferred from the release URL and stay in sync with the upstream tag.
 
 ## Issues
 
-For formula problems such as install failures or checksum mismatches, open an issue in this repository. For tool behavior, report in that tool's repository.
+For install problems such as checksum mismatches or cask failures, open an issue in this repository. For tool behavior, report in that tool's repository.

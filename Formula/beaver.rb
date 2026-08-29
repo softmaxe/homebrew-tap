@@ -26,7 +26,17 @@ class Beaver < Formula
   end
 
   def install
-    bin.install buildpath.glob("beaver-*/beaver").first
+    ohai "buildpath = #{buildpath}"
+    ohai "buildpath children = #{buildpath.children.map(&:basename).join(', ')}"
+    ohai "pwd = #{Dir.pwd}"
+    ohai "Dir pwd = #{Dir['*'].inspect}"
+    ohai "glob buildpath/beaver-*/beaver = #{Dir[buildpath/'beaver-*/beaver'].inspect}"
+    ohai "glob **/beaver = #{Dir[buildpath/'**/beaver'].inspect}"
+    ohai "glob buildpath.glob = #{buildpath.glob('beaver-*/beaver').inspect}"
+    candidate = Dir[buildpath/"**/beaver"].first || Dir[buildpath/"beaver-*/beaver"].first || buildpath.glob("beaver-*/beaver").first || Pathname.new(Dir.pwd)/"beaver"
+    ohai "candidate = #{candidate}"
+    odie "no candidate" if candidate.nil? || !File.exist?(candidate)
+    bin.install candidate
   end
 
   test do

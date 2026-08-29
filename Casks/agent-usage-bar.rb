@@ -1,9 +1,9 @@
 cask "agent-usage-bar" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "1.0.2"
-  sha256 arm:   "00712391e275024696e14a2318a32da439b54e05d936352162420ce5ad0573ae",
-         intel: "2f8ce126e781702be309b6ecd23b2cdbf6bdb27b7cc1ab4f8fe624d32450d099"
+  version "1.0.3"
+  sha256 arm:   "b89da671b6390603f163de27625d2e092a84f575d449e074989c3ee51d66b833",
+         intel: "412ad8dd877634b637ba51cc5255bad18db21c9c91bc8fdd900e2bf4774d5900"
 
   url "https://github.com/softmaxe/agent-usage-bar/releases/download/v#{version}/AgentUsageBar-#{version}-macos-#{arch}.zip",
       verified: "github.com/softmaxe/agent-usage-bar/"

@@ -1,42 +1,63 @@
+<p align="center">
+  <a href="./README.md"><kbd>English</kbd></a>
+  <a href="./README.zh-CN.md"><kbd>简体中文</kbd></a>
+</p>
+
 # homebrew-tap
 
-Homebrew tap for [beaver](https://github.com/softmaxe/beaver).
+Homebrew tap for projects maintained by softmaxe.
 
-beaver renames subtitle files to match the videos in the same folder. It runs locally, never uploads files, and works from a terminal UI or CLI.
+This tap distributes prebuilt binaries via Homebrew. Each formula tracks releases from its own repository. For usage and details of a specific tool, see that tool's repository.
+
+## Formulae
+
+| Formula | Repo |
+| --- | --- |
+| `beaver` | [softmaxe/beaver](https://github.com/softmaxe/beaver) |
+
+Add more rows here as new formulae land. No other setup is needed for the tap itself.
 
 ## Install
 
+Tap once, then install any formula from this tap:
+
 ```bash
 brew tap softmaxe/tap
+brew install <formula>
+```
+
+For example:
+
+```bash
 brew install beaver
 ```
 
-Or in one step:
+You can also install without tapping first:
 
 ```bash
-brew install softmaxe/tap/beaver
+brew install softmaxe/tap/<formula>
 ```
 
 Update:
 
 ```bash
 brew update
-brew upgrade beaver
+brew upgrade <formula>
 ```
 
-## What the formula does
-
-The formula downloads the prebuilt archive from the beaver release page and installs the `beaver` binary to your Homebrew prefix. No Rust toolchain is needed.
-
-Current version tracks `softmaxe/beaver` releases. The archive URL and SHA256 are updated automatically when a new tag is published.
-
-## Verify
+Verify:
 
 ```bash
-beaver --help
-brew test beaver
+brew test <formula>
+<formula> --help
 ```
+
+## How it works
+
+Each `Formula/<name>.rb` points to a GitHub release archive and its `SHA256`. On `brew install`, Homebrew downloads the archive that matches your OS and CPU, verifies the checksum, and links the binary into your prefix. No build toolchain is required on your machine.
+
+Versions are inferred from the release URL and stay in sync with the upstream tag.
 
 ## Issues
 
-Report problems with the formula here. Report problems with beaver itself in the [main repo](https://github.com/softmaxe/beaver/issues).
+For formula problems such as install failures or checksum mismatches, open an issue in this repository. For tool behavior, report in that tool's repository.

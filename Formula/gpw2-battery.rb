@@ -7,13 +7,13 @@ class Gpw2Battery < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/softmaxe/gpw2-battery/releases/download/v1.0.2/gpw2-battery-v1.0.2-aarch64-apple-darwin.tar.gz"
-      sha256 "8642b96611a2ab800f267681f9301ee36067abdf07b3b8b193bcd1df47e68f4d"
+      url "https://github.com/softmaxe/gpw2-battery/releases/download/v1.0.3/gpw2-battery-v1.0.3-aarch64-apple-darwin.tar.gz"
+      sha256 "ae734823afb7d0addf3bda8fd441d8b679d0579af302cfcd18b6735156448edb"
     end
 
     on_intel do
-      url "https://github.com/softmaxe/gpw2-battery/releases/download/v1.0.2/gpw2-battery-v1.0.2-x86_64-apple-darwin.tar.gz"
-      sha256 "25934c8dc40f9d06815603fef1e2f6c2fbec27dbf4fa06e3af70a6152cc8486c"
+      url "https://github.com/softmaxe/gpw2-battery/releases/download/v1.0.3/gpw2-battery-v1.0.3-x86_64-apple-darwin.tar.gz"
+      sha256 "4087cf09ca8a5fa08095b4092eb911272d5d6dc0502f3b1a50ae436634e2e019"
     end
   end
 

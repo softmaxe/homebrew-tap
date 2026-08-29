@@ -26,7 +26,7 @@ class Beaver < Formula
   end
 
   def install
-    bin.install Dir["beaver-*/beaver"].first
+    bin.install buildpath.glob("beaver-*/beaver").first
   end
 
   test do

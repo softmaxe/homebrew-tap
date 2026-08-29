@@ -2,7 +2,6 @@ class Beaver < Formula
   desc "Rename subtitle files to match the videos beside them"
   homepage "https://github.com/softmaxe/beaver"
   license "AGPL-3.0-only"
-  version "1.0.0"
 
   on_macos do
     on_arm do
@@ -31,6 +30,6 @@ class Beaver < Formula
   end
 
   test do
-    system "#{bin}/beaver", "--help"
+    system bin/"beaver", "--help"
   end
 end

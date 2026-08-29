@@ -3,6 +3,12 @@
   <a href="./README.zh-CN.md"><kbd>简体中文</kbd></a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/Homebrew/brew.sh/blob/65c7b5b034e3d03169ac60073247634ef40fa9d0/assets/img/homebrew.svg">
+    <img src="./assets/homebrew.svg" alt="Homebrew" width="96">
+  </a>
+</p>
+
 # homebrew-tap
 
 Homebrew tap for projects maintained by softmaxe.

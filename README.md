@@ -18,7 +18,7 @@ Homebrew tap for projects maintained by softmaxe.
 | Project | Type | Repository |
 | --- | --- | --- |
 | `beaver` | formula | [softmaxe/beaver](https://github.com/softmaxe/beaver) |
-| `agent-usage-bar` | cask | [softmaxe/agent-usage-bar](https://github.com/softmaxe/agent-usage-bar) |
+| `quota-bar` | cask | [softmaxe/quota-bar](https://github.com/softmaxe/quota-bar) |
 
 For project details and usage, see the corresponding project repository.
 
@@ -27,7 +27,7 @@ For project details and usage, see the corresponding project repository.
 ```bash
 brew tap softmaxe/tap
 brew install beaver
-brew install --cask agent-usage-bar
+brew install --cask quota-bar
 ```
 
 ## Issues

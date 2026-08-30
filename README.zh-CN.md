@@ -18,7 +18,7 @@ softmaxe 项目的 Homebrew tap。
 | 项目 | 类型 | 仓库 |
 | --- | --- | --- |
 | `beaver` | formula | [softmaxe/beaver](https://github.com/softmaxe/beaver) |
-| `agent-usage-bar` | cask | [softmaxe/agent-usage-bar](https://github.com/softmaxe/agent-usage-bar) |
+| `quota-bar` | cask | [softmaxe/quota-bar](https://github.com/softmaxe/quota-bar) |
 
 项目介绍和具体使用方式请查看对应项目仓库。
 
@@ -27,7 +27,7 @@ softmaxe 项目的 Homebrew tap。
 ```bash
 brew tap softmaxe/tap
 brew install beaver
-brew install --cask agent-usage-bar
+brew install --cask quota-bar
 ```
 
 ## 反馈

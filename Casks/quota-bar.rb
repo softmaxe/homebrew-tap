@@ -1,9 +1,9 @@
 cask "quota-bar" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "1.0.4"
-  sha256 arm:   "b1c32c8f65d9087ed598e5b738477e8cf822e2342a76ebd54289ccd148fb1b19",
-         intel: "db78df0ec3458a4752387b0bbe57c59db09c602552b2bd1f79245b3a12a459e1"
+  version "1.0.5"
+  sha256 arm:   "eb5f71a0312b0ed07766e75b519854b39e357c6a52a2e43d964efc3ce75d09fe",
+         intel: "dfda09d92aed371cb37ab722096006dd9bd6ea8d22f99cc6960290a462feaa17"
 
   url "https://github.com/softmaxe/quota-bar/releases/download/v#{version}/QuotaBar-#{version}-macos-#{arch}.zip",
       verified: "github.com/softmaxe/quota-bar/"

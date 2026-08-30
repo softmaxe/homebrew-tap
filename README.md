@@ -18,6 +18,7 @@ Homebrew tap for projects maintained by softmaxe.
 | Project | Type | Repository |
 | --- | --- | --- |
 | `beaver` | formula | [softmaxe/beaver](https://github.com/softmaxe/beaver) |
+| `gbat` | formula | [softmaxe/gbat](https://github.com/softmaxe/gbat) |
 | `quota-bar` | cask | [softmaxe/quota-bar](https://github.com/softmaxe/quota-bar) |
 
 For project details and usage, see the corresponding project repository.
@@ -27,6 +28,7 @@ For project details and usage, see the corresponding project repository.
 ```bash
 brew tap softmaxe/tap
 brew install beaver
+brew install gbat
 brew install --cask quota-bar
 ```
 

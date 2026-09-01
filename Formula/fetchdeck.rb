@@ -8,11 +8,11 @@ class Fetchdeck < Formula
   depends_on "yt-dlp"
 
   if Hardware::CPU.arm?
-    url "https://github.com/softmaxe/FetchDeck/releases/download/v1.0.0/fetchdeck-v1.0.0-aarch64-apple-darwin.tar.gz"
-    sha256 "b43ce41d20d03cf555c63ac0f1f850d679f4776284f855c6bcc03cbc73b8c6e3"
+    url "https://github.com/softmaxe/FetchDeck/releases/download/v1.0.1/fetchdeck-v1.0.1-aarch64-apple-darwin.tar.gz"
+    sha256 "30c578c887d53ed368f26b702e7b5fb2c9bfed8f68ca7aa22293c18b9c6014f1"
   else
-    url "https://github.com/softmaxe/FetchDeck/releases/download/v1.0.0/fetchdeck-v1.0.0-x86_64-apple-darwin.tar.gz"
-    sha256 "34dd4702cfb63827e9fc526e1ca221168361caa3b2c10dc6a32272be938358d0"
+    url "https://github.com/softmaxe/FetchDeck/releases/download/v1.0.1/fetchdeck-v1.0.1-x86_64-apple-darwin.tar.gz"
+    sha256 "db1561620111e4b8fecb1a290292d3b626743e20c8ed5ae392deff9a31d22da9"
   end
 
   def install

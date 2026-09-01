@@ -11,29 +11,26 @@
 
 # homebrew-tap
 
-softmaxe 项目的 Homebrew tap。
+[softmaxe](https://github.com/softmaxe) 维护的 Homebrew 软件包。
 
-## 项目
+## 软件包
 
-| 项目 | 类型 | 仓库 |
-| --- | --- | --- |
-| `beaver` | formula | [softmaxe/beaver](https://github.com/softmaxe/beaver) |
-| `gbat` | formula | [softmaxe/gbat](https://github.com/softmaxe/gbat) |
-| `otter` | formula | [softmaxe/otter](https://github.com/softmaxe/otter) |
-| `quota-bar` | cask | [softmaxe/quota-bar](https://github.com/softmaxe/quota-bar) |
-
-项目介绍和具体使用方式请查看对应项目仓库。
+| 软件包 | 用途 |
+| --- | --- |
+| [`beaver`](https://github.com/softmaxe/beaver) | 将字幕文件重命名为对应的视频文件名 |
+| [`fetchdeck`](https://github.com/softmaxe/fetch-deck) | 在终端中使用 yt-dlp 下载媒体 |
+| [`gbat`](https://github.com/softmaxe/gbat) | 在 macOS 上读取 Logitech GPW2 电量 |
+| [`otter`](https://github.com/softmaxe/otter) | 在终端中使用 FFmpeg 转码视频 |
+| [`quota-bar`](https://github.com/softmaxe/quota-bar) | 在 macOS 菜单栏查看 Codex 和 Claude 用量 |
 
 ## 安装
 
 ```bash
 brew tap softmaxe/tap
-brew install beaver
-brew install gbat
-brew install otter
+brew install beaver fetchdeck gbat otter
 brew install --cask quota-bar
 ```
 
 ## 反馈
 
-安装失败等 tap 相关问题，请在本仓库提 issue。项目本身的行为或使用问题，请到对应项目仓库反馈。
+Tap 和安装问题请在本仓库反馈。软件问题请到对应项目仓库反馈。

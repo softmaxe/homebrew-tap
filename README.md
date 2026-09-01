@@ -11,29 +11,26 @@
 
 # homebrew-tap
 
-Homebrew tap for projects maintained by softmaxe.
+Homebrew packages maintained by [softmaxe](https://github.com/softmaxe).
 
-## Projects
+## Packages
 
-| Project | Type | Repository |
-| --- | --- | --- |
-| `beaver` | formula | [softmaxe/beaver](https://github.com/softmaxe/beaver) |
-| `gbat` | formula | [softmaxe/gbat](https://github.com/softmaxe/gbat) |
-| `otter` | formula | [softmaxe/otter](https://github.com/softmaxe/otter) |
-| `quota-bar` | cask | [softmaxe/quota-bar](https://github.com/softmaxe/quota-bar) |
-
-For project details and usage, see the corresponding project repository.
+| Package | Description |
+| --- | --- |
+| [`beaver`](https://github.com/softmaxe/beaver) | Rename subtitle files to match nearby videos |
+| [`fetchdeck`](https://github.com/softmaxe/fetch-deck) | Download media with yt-dlp in the terminal |
+| [`gbat`](https://github.com/softmaxe/gbat) | Read Logitech GPW2 battery status on macOS |
+| [`otter`](https://github.com/softmaxe/otter) | Transcode video with FFmpeg in the terminal |
+| [`quota-bar`](https://github.com/softmaxe/quota-bar) | Track Codex and Claude usage from the macOS menu bar |
 
 ## Install
 
 ```bash
 brew tap softmaxe/tap
-brew install beaver
-brew install gbat
-brew install otter
+brew install beaver fetchdeck gbat otter
 brew install --cask quota-bar
 ```
 
 ## Issues
 
-For tap-related issues, such as installation failures, open an issue in this repository. For project-specific behavior or usage, report the issue in the corresponding project repository.
+Report tap and installation problems here. Report bugs in the package's repository.

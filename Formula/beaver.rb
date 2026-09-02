@@ -4,24 +4,21 @@ class Beaver < Formula
   license "AGPL-3.0-only"
 
   on_macos do
+    depends_on arch: :arm64
     on_arm do
-      url "https://github.com/softmaxe/beaver/releases/download/v1.0.1/beaver-v1.0.1-aarch64-apple-darwin.tar.gz"
-      sha256 "aeba341d1682a421c48a555c0c732f2948f3adb222917d3ae1f366d744fb4b9e"
-    end
-    on_intel do
-      url "https://github.com/softmaxe/beaver/releases/download/v1.0.1/beaver-v1.0.1-x86_64-apple-darwin.tar.gz"
-      sha256 "a6a68beb5d2cd9787564eb3f310b5af4a5cab8e0bef84f3111595fdb931e8731"
+      url "https://github.com/softmaxe/beaver/releases/download/v1.0.3/beaver-v1.0.3-aarch64-apple-darwin.tar.gz"
+      sha256 "acaa27504267e730e8487dd140be60353c781a19415a5867007d5375e36fd089"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/softmaxe/beaver/releases/download/v1.0.1/beaver-v1.0.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "fad64026aef4a83b747e59707ccabfd690efe79326b8ffc7a2d5e0f4a57e104d"
+      url "https://github.com/softmaxe/beaver/releases/download/v1.0.3/beaver-v1.0.3-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d7aee8d0bd60161843eb94156bc990218305452b09433622edfda20d8d00bd81"
     end
     on_intel do
-      url "https://github.com/softmaxe/beaver/releases/download/v1.0.1/beaver-v1.0.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "df7e68b110f843f2b6c0fdd7895c41ed49a81ff495f4388d39bd320a8f343326"
+      url "https://github.com/softmaxe/beaver/releases/download/v1.0.3/beaver-v1.0.3-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8dbf9426a0a4c366563bd1b6a5aa9d1803f51ff282b512d7a048dbb307ed3339"
     end
   end
 

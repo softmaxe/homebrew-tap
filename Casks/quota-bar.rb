@@ -1,11 +1,8 @@
 cask "quota-bar" do
-  arch arm: "arm64", intel: "x86_64"
+  version "1.1.2"
+  sha256 "d5ecee2671ed758a9ee88d7bb9b9f89ff6123c1bb8c5760a401e68cf51755982"
 
-  version "1.1.1"
-  sha256 arm:   "900ce5acd2c1fda3250742871aaec6617d9664e07e3c8382aeb182ffeefe03a0",
-         intel: "9de576fb7cf601c7b6c630ce0cb65c8c971d0b9a2ec329ec6ee8a98a8b6402fd"
-
-  url "https://github.com/softmaxe/quota-bar/releases/download/v#{version}/QuotaBar-#{version}-macos-#{arch}.zip",
+  url "https://github.com/softmaxe/quota-bar/releases/download/v#{version}/QuotaBar-#{version}-macos-arm64.zip",
       verified: "github.com/softmaxe/quota-bar/"
   name "QuotaBar"
   desc "Menu bar app for Codex and Claude quota, cost, and reset windows"
@@ -16,6 +13,7 @@ cask "quota-bar" do
     strategy :github_latest
   end
 
+  depends_on arch: :arm64
   depends_on macos: :sonoma
 
   app "QuotaBar.app"

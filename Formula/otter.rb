@@ -2,9 +2,9 @@ class Otter < Formula
   desc "Terminal interface for FFmpeg transcoding"
   homepage "https://github.com/softmaxe/otter"
 
+  depends_on arch: :arm64
   depends_on "ffmpeg"
   depends_on :macos
-  depends_on arch: :arm64
 
   on_macos do
     on_arm do

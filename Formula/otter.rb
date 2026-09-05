@@ -8,8 +8,8 @@ class Otter < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/softmaxe/otter/releases/download/v1.0.2/otter-v1.0.2-aarch64-apple-darwin.tar.gz"
-      sha256 "470375c295ba9ae31f03359ccbd186e15035dc500286cdf33acb82c31ac6fff5"
+      url "https://github.com/softmaxe/otter/releases/download/v1.0.3/otter-v1.0.3-aarch64-apple-darwin.tar.gz"
+      sha256 "fef031b7afdd12f5def7ee819d00908ba8c8d1ab95e50add69ffb7ad9a18dcca"
     end
   end
 

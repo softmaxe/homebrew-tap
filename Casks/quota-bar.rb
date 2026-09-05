@@ -2,8 +2,7 @@ cask "quota-bar" do
   version "1.4.4"
   sha256 "290a3e763f82b2e3cda64c60562bd386ea9c0575a046b59022ebd95a01fc7342"
 
-  url "https://github.com/softmaxe/quota-bar/releases/download/v#{version}/QuotaBar-#{version}-macos-arm64.zip",
-      verified: "github.com/softmaxe/quota-bar/"
+  url "https://github.com/softmaxe/quota-bar/releases/download/v#{version}/QuotaBar-#{version}-macos-arm64.zip"
   name "QuotaBar"
   desc "Menu bar app for Codex and Claude quota, cost, and reset windows"
   homepage "https://github.com/softmaxe/quota-bar"

@@ -1,8 +1,8 @@
 class Fetchdeck < Formula
   desc "Friendly terminal interface for yt-dlp"
   homepage "https://github.com/softmaxe/fetch-deck"
-  url "https://github.com/softmaxe/fetch-deck/releases/download/v1.0.6/fetchdeck-v1.0.6-aarch64-apple-darwin.tar.gz"
-  sha256 "1ce6684b0bd9f6f721c109e6bde91feb2cd33278a9d90be54abed8dc7f4ed502"
+  url "https://github.com/softmaxe/fetch-deck/releases/download/v1.0.7/fetchdeck-v1.0.7-aarch64-apple-darwin.tar.gz"
+  sha256 "d48a7f825586e2ed418aae897b8a892c7cc5025966acaa12be6faa2b89efcd77"
   license "AGPL-3.0-only"
 
   depends_on arch: :arm64

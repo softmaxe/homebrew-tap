@@ -8,8 +8,8 @@ class Gbat < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/softmaxe/gbat/releases/download/v1.0.10/gbat-v1.0.10-aarch64-apple-darwin.tar.gz"
-      sha256 "9e6ae45acdee81a0c74a2ed82dd2140263ffbecd8379738c1b8cf040356c6dab"
+      url "https://github.com/softmaxe/gbat/releases/download/v1.0.11/gbat-v1.0.11-aarch64-apple-darwin.tar.gz"
+      sha256 "17b1d4500d52c4d5197d31c99e0050e555ad7050a39d52a0d8ae64bc5963e085"
     end
   end
 

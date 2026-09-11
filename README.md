@@ -18,6 +18,7 @@ Homebrew formulae and casks maintained by [softmaxe](https://github.com/softmaxe
 | Package | Type | Platform | Description |
 | --- | --- | --- | --- |
 | [`beaver`](https://github.com/softmaxe/beaver) | Formula | Apple silicon macOS; Linux ARM64/x86_64 | Rename subtitle files to match nearby videos |
+| [`ferry`](https://github.com/softmaxe/ferry) | Formula | Apple silicon macOS 26+ | Move the focused window to another Space |
 | [`fetchdeck`](https://github.com/softmaxe/fetch-deck) | Formula | Apple silicon macOS | Download media with yt-dlp in the terminal |
 | [`gbat`](https://github.com/softmaxe/gbat) | Formula | Apple silicon macOS 11+ | Read Logitech GPW2 battery and charging status |
 | [`otter`](https://github.com/softmaxe/otter) | Formula | Apple silicon macOS | Review and run FFmpeg transcoding commands in the terminal |
@@ -34,6 +35,12 @@ On Apple silicon macOS:
 
 ```bash
 brew install fetchdeck gbat otter
+```
+
+On Apple silicon macOS Tahoe 26 or later:
+
+```bash
+brew install ferry
 ```
 
 On Apple silicon macOS Sonoma 14 or later:

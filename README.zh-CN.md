@@ -18,6 +18,7 @@
 | 软件包 | 类型 | 平台 | 用途 |
 | --- | --- | --- | --- |
 | [`beaver`](https://github.com/softmaxe/beaver) | Formula | Apple silicon macOS；Linux ARM64/x86_64 | 将字幕文件重命名为对应的视频文件名 |
+| [`ferry`](https://github.com/softmaxe/ferry) | Formula | Apple silicon macOS 26+ | 把焦点窗口移到另一个 Space |
 | [`fetchdeck`](https://github.com/softmaxe/fetch-deck) | Formula | Apple silicon macOS | 在终端中使用 yt-dlp 下载媒体 |
 | [`gbat`](https://github.com/softmaxe/gbat) | Formula | Apple silicon macOS 11+ | 读取 Logitech GPW2 电量和充电状态 |
 | [`otter`](https://github.com/softmaxe/otter) | Formula | Apple silicon macOS | 在终端中查看并执行 FFmpeg 转码命令 |
@@ -34,6 +35,12 @@ brew install beaver
 
 ```bash
 brew install fetchdeck gbat otter
+```
+
+在 Apple silicon macOS Tahoe 26 或更高版本上：
+
+```bash
+brew install ferry
 ```
 
 在 Apple silicon macOS Sonoma 14 或更高版本上：

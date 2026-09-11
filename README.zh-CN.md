@@ -28,28 +28,31 @@
 
 ```bash
 brew tap softmaxe/tap
+```
+
+`beaver` 支持 Apple silicon macOS 和 Linux：
+
+```bash
 brew install beaver
 ```
 
-在 Apple silicon macOS 上：
+其余软件包需要 Apple silicon macOS：
 
 ```bash
 brew install fetchdeck gbat otter
 ```
 
-在 Apple silicon macOS Tahoe 26 或更高版本上：
-
-```bash
-brew install ferry
-```
-
-在 Apple silicon macOS Sonoma 14 或更高版本上：
+在 macOS Sonoma 14 或更高版本上：
 
 ```bash
 brew install --cask quota-bar
 ```
 
-请根据操作系统和 CPU 架构选择支持的软件包；本 tap 中只有 `beaver` 支持 Linux。
+在 macOS Tahoe 26 或更高版本上：
+
+```bash
+brew install ferry
+```
 
 ## 问题反馈
 

@@ -28,28 +28,31 @@ Homebrew formulae and casks maintained by [softmaxe](https://github.com/softmaxe
 
 ```bash
 brew tap softmaxe/tap
+```
+
+`beaver` runs on Apple silicon macOS and Linux:
+
+```bash
 brew install beaver
 ```
 
-On Apple silicon macOS:
+The other packages need Apple silicon macOS:
 
 ```bash
 brew install fetchdeck gbat otter
 ```
 
-On Apple silicon macOS Tahoe 26 or later:
-
-```bash
-brew install ferry
-```
-
-On Apple silicon macOS Sonoma 14 or later:
+On macOS Sonoma 14 or later:
 
 ```bash
 brew install --cask quota-bar
 ```
 
-Install only the packages supported by your operating system and CPU architecture. `beaver` is the only package in this tap that supports Linux.
+On macOS Tahoe 26 or later:
+
+```bash
+brew install ferry
+```
 
 ## Reporting issues
 

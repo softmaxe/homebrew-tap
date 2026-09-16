@@ -20,7 +20,6 @@
 | [`beaver`](https://github.com/softmaxe/beaver) | Formula | Apple silicon macOS；Linux ARM64/x86_64 | 将字幕文件重命名为对应的视频文件名 |
 | [`ferry`](https://github.com/softmaxe/ferry) | Formula | Apple silicon macOS 26+ | 把焦点窗口移到另一个 Space |
 | [`gbat`](https://github.com/softmaxe/gbat) | Formula | Apple silicon macOS 11+ | 读取 Logitech GPW2 电量和充电状态 |
-| [`otter`](https://github.com/softmaxe/otter) | Formula | Apple silicon macOS | 在终端中查看并执行 FFmpeg 转码命令 |
 | [`quota-bar`](https://github.com/softmaxe/quota-bar) | Cask | Apple silicon macOS 14+ | 在菜单栏查看 Codex 和 Claude 的用量、费用及重置时间 |
 
 ## 安装
@@ -38,7 +37,7 @@ brew install beaver
 其余软件包需要 Apple silicon macOS：
 
 ```bash
-brew install gbat otter
+brew install gbat
 ```
 
 在 macOS Sonoma 14 或更高版本上：

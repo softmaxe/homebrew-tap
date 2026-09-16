@@ -20,7 +20,6 @@ Homebrew formulae and casks maintained by [softmaxe](https://github.com/softmaxe
 | [`beaver`](https://github.com/softmaxe/beaver) | Formula | Apple silicon macOS; Linux ARM64/x86_64 | Rename subtitle files to match nearby videos |
 | [`ferry`](https://github.com/softmaxe/ferry) | Formula | Apple silicon macOS 26+ | Move the focused window to another Space |
 | [`gbat`](https://github.com/softmaxe/gbat) | Formula | Apple silicon macOS 11+ | Read Logitech GPW2 battery and charging status |
-| [`otter`](https://github.com/softmaxe/otter) | Formula | Apple silicon macOS | Review and run FFmpeg transcoding commands in the terminal |
 | [`quota-bar`](https://github.com/softmaxe/quota-bar) | Cask | Apple silicon macOS 14+ | Show Codex and Claude quota, cost, and reset windows in the menu bar |
 
 ## Install
@@ -38,7 +37,7 @@ brew install beaver
 The other packages need Apple silicon macOS:
 
 ```bash
-brew install gbat otter
+brew install gbat
 ```
 
 On macOS Sonoma 14 or later:

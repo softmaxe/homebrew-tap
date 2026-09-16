@@ -21,6 +21,7 @@ Homebrew formulae and casks maintained by [softmaxe](https://github.com/softmaxe
 | [`ferry`](https://github.com/softmaxe/ferry) | Formula | Apple silicon macOS 26+ | Move the focused window to another Space |
 | [`gbat`](https://github.com/softmaxe/gbat) | Formula | Apple silicon macOS 11+ | Read Logitech GPW2 battery and charging status |
 | [`quota-bar`](https://github.com/softmaxe/quota-bar) | Cask | Apple silicon macOS 14+ | Show Codex and Claude quota, cost, and reset windows in the menu bar |
+| [`whisper`](https://github.com/softmaxe/whisper) | Cask | Apple silicon macOS 12+ | Self-hosted desktop dictation |
 
 ## Install
 
@@ -38,6 +39,12 @@ The other packages need Apple silicon macOS:
 
 ```bash
 brew install gbat
+```
+
+On macOS Monterey 12 or later:
+
+```bash
+brew install --cask whisper
 ```
 
 On macOS Sonoma 14 or later:

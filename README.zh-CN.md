@@ -21,6 +21,7 @@
 | [`ferry`](https://github.com/softmaxe/ferry) | Formula | Apple silicon macOS 26+ | 把焦点窗口移到另一个 Space |
 | [`gbat`](https://github.com/softmaxe/gbat) | Formula | Apple silicon macOS 11+ | 读取 Logitech GPW2 电量和充电状态 |
 | [`quota-bar`](https://github.com/softmaxe/quota-bar) | Cask | Apple silicon macOS 14+ | 在菜单栏查看 Codex 和 Claude 的用量、费用及重置时间 |
+| [`whisper`](https://github.com/softmaxe/whisper) | Cask | Apple silicon macOS 12+ | Self-hosted desktop dictation |
 
 ## 安装
 
@@ -38,6 +39,12 @@ brew install beaver
 
 ```bash
 brew install gbat
+```
+
+On macOS Monterey 12 or later:
+
+```bash
+brew install --cask whisper
 ```
 
 在 macOS Sonoma 14 或更高版本上：

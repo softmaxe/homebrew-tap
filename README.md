@@ -17,7 +17,6 @@ Homebrew formulae and casks maintained by [softmaxe](https://github.com/softmaxe
 
 | Package | Type | Platform | Description |
 | --- | --- | --- | --- |
-| [`beaver`](https://github.com/softmaxe/beaver) | Formula | Apple silicon macOS; Linux ARM64/x86_64 | Rename subtitle files to match nearby videos |
 | [`ferry`](https://github.com/softmaxe/ferry) | Formula | Apple silicon macOS 26+ | Move the focused window to another Space |
 | [`gbat`](https://github.com/softmaxe/gbat) | Formula | Apple silicon macOS 11+ | Read Logitech GPW2 battery and charging status |
 | [`quota-bar`](https://github.com/softmaxe/quota-bar) | Cask | Apple silicon macOS 14+ | Show Codex and Claude quota, cost, and reset windows in the menu bar |
@@ -29,13 +28,7 @@ Homebrew formulae and casks maintained by [softmaxe](https://github.com/softmaxe
 brew tap softmaxe/tap
 ```
 
-`beaver` runs on Apple silicon macOS and Linux:
-
-```bash
-brew install beaver
-```
-
-The other packages need Apple silicon macOS:
+All packages need Apple silicon macOS:
 
 ```bash
 brew install gbat

@@ -17,7 +17,6 @@
 
 | 软件包 | 类型 | 平台 | 用途 |
 | --- | --- | --- | --- |
-| [`beaver`](https://github.com/softmaxe/beaver) | Formula | Apple silicon macOS；Linux ARM64/x86_64 | 将字幕文件重命名为对应的视频文件名 |
 | [`ferry`](https://github.com/softmaxe/ferry) | Formula | Apple silicon macOS 26+ | 把焦点窗口移到另一个 Space |
 | [`gbat`](https://github.com/softmaxe/gbat) | Formula | Apple silicon macOS 11+ | 读取 Logitech GPW2 电量和充电状态 |
 | [`quota-bar`](https://github.com/softmaxe/quota-bar) | Cask | Apple silicon macOS 14+ | 在菜单栏查看 Codex 和 Claude 的用量、费用及重置时间 |
@@ -29,13 +28,7 @@
 brew tap softmaxe/tap
 ```
 
-`beaver` 支持 Apple silicon macOS 和 Linux：
-
-```bash
-brew install beaver
-```
-
-其余软件包需要 Apple silicon macOS：
+所有软件包都需要 Apple silicon macOS：
 
 ```bash
 brew install gbat

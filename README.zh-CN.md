@@ -20,7 +20,7 @@
 | [`ferry`](https://github.com/softmaxe/ferry) | Formula | Apple silicon macOS 26+ | 把焦点窗口移到另一个 Space |
 | [`gbat`](https://github.com/softmaxe/gbat) | Formula | Apple silicon macOS 11+ | 读取 Logitech GPW2 电量和充电状态 |
 | [`quota-bar`](https://github.com/softmaxe/quota-bar) | Cask | Apple silicon macOS 14+ | 在菜单栏查看 Codex 和 Claude 的用量、费用及重置时间 |
-| [`whisper`](https://github.com/softmaxe/whisper) | Cask | Apple silicon macOS 12+ | Self-hosted desktop dictation |
+| [`whisper`](https://github.com/softmaxe/whisper) | Cask | Apple silicon macOS 12+ | 自托管语音识别的桌面听写工具 |
 
 ## 安装
 
@@ -34,7 +34,7 @@ brew tap softmaxe/tap
 brew install gbat
 ```
 
-On macOS Monterey 12 or later:
+在 macOS Monterey 12 或更高版本上：
 
 ```bash
 brew install --cask whisper

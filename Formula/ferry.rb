@@ -8,8 +8,8 @@ class Ferry < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/softmaxe/ferry/releases/download/v1.0.0/ferry-v1.0.0-aarch64-apple-darwin.tar.gz"
-      sha256 "c0fd76de4571baae2399da7d9accd6c18a52748d02f431980552690c4e03e8a1"
+      url "https://github.com/softmaxe/ferry/releases/download/v1.0.1/ferry-v1.0.1-aarch64-apple-darwin.tar.gz"
+      sha256 "639a7bc167fd7a823538231d1e88cd426b418ba3424a811086b0d05c0826fc6c"
     end
   end
 

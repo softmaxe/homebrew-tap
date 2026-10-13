@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  check:
+    name: Check formulae and casks
+    runs-on: macos-15
+    timeout-minutes: 15
+    env:
+      HOMEBREW_NO_AUTO_UPDATE: "1"
+      HOMEBREW_NO_ANALYTICS: "1"
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      # Release workflows push straight to main, so the checks follow current Homebrew.
+      - name: Update Homebrew
+        run: brew update
+
+      # brew audit works on taps, so tap the checkout under the published tap name.
+      - name: Tap the checkout
+        run: |
+          set -euo pipefail
+          brew tap softmaxe/tap "$GITHUB_WORKSPACE"
+          brew trust softmaxe/tap
+
+      - name: Style
+        run: brew style softmaxe/tap
+
+      - name: Audit
+        run: brew audit --strict --tap softmaxe/tap

@@ -1,6 +1,6 @@
 cask "whisper" do
-  version "0.0.1"
-  sha256 "43c6c5444e582073958e64f79a8ff8b2b999a0df467a72400d80d3361458bb7b"
+  version "0.0.2"
+  sha256 "44c1011b637d8488e4fc692e53dc8910fcb6b600a828e843d5ddd0e22f906d1d"
 
   url "https://github.com/softmaxe/whisper/releases/download/v#{version}/whisper-#{version}-macos-arm64.zip"
   name "Whisper"
@@ -18,8 +18,9 @@ cask "whisper" do
   app "Whisper.app"
 
   zap trash: [
-    "~/Library/Application Support/whisper",
-    "~/Library/Caches/whisper",
-    "~/Library/Preferences/local.whisper.desktop.plist",
+    "~/Library/Application Support/com.softmaxe.whisper",
+    "~/Library/HTTPStorages/com.softmaxe.whisper",
+    "~/Library/Preferences/com.softmaxe.whisper.plist",
+    "~/Library/Saved Application State/com.softmaxe.whisper.savedState",
   ]
 end

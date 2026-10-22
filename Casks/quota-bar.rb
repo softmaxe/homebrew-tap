@@ -1,6 +1,6 @@
 cask "quota-bar" do
-  version "0.0.3"
-  sha256 "1de479d7fb99b59461ecf5011c702dfdb5621416d2c0815b39488c16985d4f71"
+  version "0.0.4"
+  sha256 "d91c2f3d154529f2db93640b1afa3b3c5b7cda3ed9a2519b6ff31b9c7f3ba364"
 
   url "https://github.com/softmaxe/quota-bar/releases/download/v#{version}/QuotaBar-#{version}-macos-arm64.zip"
   name "QuotaBar"

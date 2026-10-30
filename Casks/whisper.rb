@@ -1,6 +1,6 @@
 cask "whisper" do
-  version "0.0.11"
-  sha256 "76deff276a5b3efb8f892a898738f4b79907ab8792560f5893e7577caed682b6"
+  version "0.0.12"
+  sha256 "cab1126d06b23c307835f3ffd7958fb98db89e660089aa7afb13f1a8733b3c84"
 
   url "https://github.com/softmaxe/whisper/releases/download/v#{version}/whisper-#{version}-macos-arm64.zip"
   name "Whisper"

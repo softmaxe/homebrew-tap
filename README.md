@@ -55,3 +55,8 @@ brew install ferry
 ## Reporting issues
 
 Report tap or installation problems in this repository's [issues](https://github.com/softmaxe/homebrew-tap/issues). Report package bugs in the relevant package repository.
+
+## License
+
+The tap is licensed under [GNU Affero General Public License v3](LICENSE).
+See [Third-party notices](THIRD_PARTY_NOTICES.md) for the Homebrew logo license.

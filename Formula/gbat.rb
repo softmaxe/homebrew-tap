@@ -8,14 +8,15 @@ class Gbat < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/softmaxe/gbat/releases/download/v0.0.3/gbat-v0.0.3-aarch64-apple-darwin.tar.gz"
-      sha256 "6a8e9449a93a4048463d64179afaab39c6618e4f2ce8a800a0f64554ca2997bd"
+      url "https://github.com/softmaxe/gbat/releases/download/v0.0.4/gbat-v0.0.4-aarch64-apple-darwin.tar.gz"
+      sha256 "e37f24e53a8a5c4ea5f4b18fd4da3e4e216d35df885000ac3198e7b837eecb18"
     end
   end
 
   def install
     bin.install "gbat"
     prefix.install "LICENSE"
+    prefix.install "THIRD_PARTY_NOTICES.md" if (buildpath/"THIRD_PARTY_NOTICES.md").file?
   end
 
   test do

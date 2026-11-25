@@ -1,15 +1,15 @@
 cask "quota-bar" do
-  version "0.0.37"
-  sha256 "a6bbb72b7272e03cb7121b8f20e55f44f5cc3aa79a533bad25a08e2ced394a8e"
+  version "0.0.38"
+  sha256 "68ed4d2ab6ba3a8fbab9279f58627b331e6d59d3d333e7200c00a1754b583f3b"
 
-  url "https://github.com/softmaxe/quota-bar/releases/download/v#{version}/QuotaBar-#{version}-macos-arm64.zip"
+  url "https://github.com/softmaxe/homebrew-tap/releases/download/quota-bar-v#{version}/QuotaBar-#{version}-macos-arm64.zip"
   name "QuotaBar"
   desc "Menu bar app for Codex and Claude quota, cost, and reset windows"
-  homepage "https://github.com/softmaxe/quota-bar"
+  homepage "https://github.com/softmaxe/homebrew-tap"
 
   livecheck do
-    url :url
-    strategy :github_latest
+    url "https://github.com/softmaxe/homebrew-tap.git"
+    regex(/^quota-bar-v(\d+\.\d+\.\d+)$/i)
   end
 
   depends_on arch: :arm64

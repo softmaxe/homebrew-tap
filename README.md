@@ -17,10 +17,10 @@ Homebrew formulae and casks maintained by [softmaxe](https://github.com/softmaxe
 
 | Package | Type | Platform | Description |
 | --- | --- | --- | --- |
-| [`ferry`](https://github.com/softmaxe/ferry) | Formula | Apple silicon macOS 26+ | Move the focused window to another Space |
-| [`gbat`](https://github.com/softmaxe/gbat) | Formula | Apple silicon macOS 11+ | Read Logitech GPW2 battery and charging status |
-| [`quota-bar`](https://github.com/softmaxe/quota-bar) | Cask | Apple silicon macOS 14+ | Show Codex and Claude quota, cost, and reset windows in the menu bar |
-| [`whisper`](https://github.com/softmaxe/whisper) | Cask | Apple silicon macOS 12+ | Self-hosted desktop dictation |
+| [`ferry`](https://github.com/softmaxe/homebrew-tap/releases?q=ferry-v) | Formula | Apple silicon macOS 26+ | Move the focused window to another Space |
+| [`gbat`](https://github.com/softmaxe/homebrew-tap/releases?q=gbat-v) | Formula | Apple silicon macOS 11+ | Read Logitech GPW2 battery and charging status |
+| [`quota-bar`](https://github.com/softmaxe/homebrew-tap/releases?q=quota-bar-v) | Cask | Apple silicon macOS 14+ | Show Codex and Claude quota, cost, and reset windows in the menu bar |
+| [`whisper`](https://github.com/softmaxe/homebrew-tap/releases?q=whisper-v) | Cask | Apple silicon macOS 12+ | Self-hosted desktop dictation |
 
 ## Install
 
@@ -54,7 +54,7 @@ brew install ferry
 
 ## Reporting issues
 
-Report tap or installation problems in this repository's [issues](https://github.com/softmaxe/homebrew-tap/issues). Report package bugs in the relevant package repository.
+Report package bugs and installation problems in this repository's [issues](https://github.com/softmaxe/homebrew-tap/issues).
 
 ## License
 

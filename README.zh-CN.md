@@ -17,10 +17,10 @@
 
 | 软件包 | 类型 | 平台 | 用途 |
 | --- | --- | --- | --- |
-| [`ferry`](https://github.com/softmaxe/ferry) | Formula | Apple silicon macOS 26+ | 把焦点窗口移到另一个 Space |
-| [`gbat`](https://github.com/softmaxe/gbat) | Formula | Apple silicon macOS 11+ | 读取 Logitech GPW2 电量和充电状态 |
-| [`quota-bar`](https://github.com/softmaxe/quota-bar) | Cask | Apple silicon macOS 14+ | 在菜单栏查看 Codex 和 Claude 的用量、费用及重置时间 |
-| [`whisper`](https://github.com/softmaxe/whisper) | Cask | Apple silicon macOS 12+ | 自托管语音识别的桌面听写工具 |
+| [`ferry`](https://github.com/softmaxe/homebrew-tap/releases?q=ferry-v) | Formula | Apple silicon macOS 26+ | 把焦点窗口移到另一个 Space |
+| [`gbat`](https://github.com/softmaxe/homebrew-tap/releases?q=gbat-v) | Formula | Apple silicon macOS 11+ | 读取 Logitech GPW2 电量和充电状态 |
+| [`quota-bar`](https://github.com/softmaxe/homebrew-tap/releases?q=quota-bar-v) | Cask | Apple silicon macOS 14+ | 在菜单栏查看 Codex 和 Claude 的用量、费用及重置时间 |
+| [`whisper`](https://github.com/softmaxe/homebrew-tap/releases?q=whisper-v) | Cask | Apple silicon macOS 12+ | 自托管语音识别的桌面听写工具 |
 
 ## 安装
 
@@ -54,4 +54,4 @@ brew install ferry
 
 ## 问题反馈
 
-Tap 或安装问题请在本仓库的 [issues](https://github.com/softmaxe/homebrew-tap/issues) 中反馈；软件问题请到对应项目仓库反馈。
+[GitHub Issues](https://github.com/softmaxe/homebrew-tap/issues)

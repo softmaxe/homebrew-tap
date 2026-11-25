@@ -11,52 +11,17 @@
   <a href="./README.zh-CN.md"><kbd>简体中文</kbd></a>
 </p>
 
-Homebrew formulae and casks maintained by [softmaxe](https://github.com/softmaxe).
+For Apple silicon Macs. Add the tap, then run the install command for the package you want.
 
-## Packages
-
-| Package | Type | Platform | Description |
-| --- | --- | --- | --- |
-| [`ferry`](https://github.com/softmaxe/homebrew-tap/releases?q=ferry-v) | Formula | Apple silicon macOS 26+ | Move the focused window to another Space |
-| [`gbat`](https://github.com/softmaxe/homebrew-tap/releases?q=gbat-v) | Formula | Apple silicon macOS 11+ | Read Logitech GPW2 battery and charging status |
-| [`quota-bar`](https://github.com/softmaxe/homebrew-tap/releases?q=quota-bar-v) | Cask | Apple silicon macOS 14+ | Show Codex and Claude quota, cost, and reset windows in the menu bar |
-| [`whisper`](https://github.com/softmaxe/homebrew-tap/releases?q=whisper-v) | Cask | Apple silicon macOS 12+ | Self-hosted desktop dictation |
-
-## Install
-
-```bash
+```sh
 brew tap softmaxe/tap
 ```
 
-All packages need Apple silicon macOS:
+| Package | Description | Minimum macOS | Install command |
+| --- | --- | --- | --- |
+| [ferry](Formula/ferry.rb) | Move the focused window to another Space | 26 | `brew install ferry` |
+| [gbat](Formula/gbat.rb) | Check Logitech GPW2 battery and charging status | 11 | `brew install gbat` |
+| [quota-bar](Casks/quota-bar.rb) | See Codex and Claude quotas, costs, and reset times in the menu bar | 14 | `brew install --cask quota-bar` |
+| [whisper](Casks/whisper.rb) | Dictate on the desktop using self-hosted speech recognition | 12 | `brew install --cask whisper` |
 
-```bash
-brew install gbat
-```
-
-On macOS Monterey 12 or later:
-
-```bash
-brew install --cask whisper
-```
-
-On macOS Sonoma 14 or later:
-
-```bash
-brew install --cask quota-bar
-```
-
-On macOS Tahoe 26 or later:
-
-```bash
-brew install ferry
-```
-
-## Reporting issues
-
-Report package bugs and installation problems in this repository's [issues](https://github.com/softmaxe/homebrew-tap/issues).
-
-## License
-
-The tap is licensed under [GNU Affero General Public License v3](LICENSE).
-See [Third-party notices](THIRD_PARTY_NOTICES.md) for the Homebrew logo license.
+[Releases](https://github.com/softmaxe/homebrew-tap/releases) · [Issues](https://github.com/softmaxe/homebrew-tap/issues) · [License](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md)

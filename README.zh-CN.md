@@ -11,47 +11,17 @@
   <a href="./README.zh-CN.md"><kbd>简体中文</kbd></a>
 </p>
 
-[softmaxe](https://github.com/softmaxe) 维护的 Homebrew formula 和 cask。
+适用于 Apple silicon Mac。先添加 tap，再运行所需软件包的安装命令。
 
-## 软件包
-
-| 软件包 | 类型 | 平台 | 用途 |
-| --- | --- | --- | --- |
-| [`ferry`](https://github.com/softmaxe/homebrew-tap/releases?q=ferry-v) | Formula | Apple silicon macOS 26+ | 把焦点窗口移到另一个 Space |
-| [`gbat`](https://github.com/softmaxe/homebrew-tap/releases?q=gbat-v) | Formula | Apple silicon macOS 11+ | 读取 Logitech GPW2 电量和充电状态 |
-| [`quota-bar`](https://github.com/softmaxe/homebrew-tap/releases?q=quota-bar-v) | Cask | Apple silicon macOS 14+ | 在菜单栏查看 Codex 和 Claude 的用量、费用及重置时间 |
-| [`whisper`](https://github.com/softmaxe/homebrew-tap/releases?q=whisper-v) | Cask | Apple silicon macOS 12+ | 自托管语音识别的桌面听写工具 |
-
-## 安装
-
-```bash
+```sh
 brew tap softmaxe/tap
 ```
 
-所有软件包都需要 Apple silicon macOS：
+| 软件包 | 用途 | 最低 macOS 版本 | 安装命令 |
+| --- | --- | --- | --- |
+| [ferry](Formula/ferry.rb) | 将当前窗口移到另一个桌面空间 | 26 | `brew install ferry` |
+| [gbat](Formula/gbat.rb) | 查看 Logitech GPW2 的电量和充电状态 | 11 | `brew install gbat` |
+| [quota-bar](Casks/quota-bar.rb) | 在菜单栏查看 Codex 和 Claude 的额度、费用及重置时间 | 14 | `brew install --cask quota-bar` |
+| [whisper](Casks/whisper.rb) | 使用自托管语音识别服务进行桌面听写 | 12 | `brew install --cask whisper` |
 
-```bash
-brew install gbat
-```
-
-在 macOS Monterey 12 或更高版本上：
-
-```bash
-brew install --cask whisper
-```
-
-在 macOS Sonoma 14 或更高版本上：
-
-```bash
-brew install --cask quota-bar
-```
-
-在 macOS Tahoe 26 或更高版本上：
-
-```bash
-brew install ferry
-```
-
-## 问题反馈
-
-[GitHub Issues](https://github.com/softmaxe/homebrew-tap/issues)
+[版本下载](https://github.com/softmaxe/homebrew-tap/releases) · [问题反馈](https://github.com/softmaxe/homebrew-tap/issues) · [许可证](LICENSE) · [第三方声明](THIRD_PARTY_NOTICES.md)

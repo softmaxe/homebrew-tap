@@ -1,18 +1,19 @@
 cask "whisper" do
-  version "0.0.33"
-  sha256 "8d5d429d554aa414fa9d202cc936fc872cb5308d94ee059cbad01620b1bf7ec3"
+  version "0.0.34"
+  sha256 "ce763b3fe9c39f6c9876cc825fd59f4a6ed8f52daaa67e713fb94517a7a3513e"
 
-  url "https://github.com/softmaxe/whisper/releases/download/v#{version}/whisper-#{version}-macos-arm64.zip"
+  url "https://github.com/softmaxe/homebrew-tap/releases/download/whisper-v#{version}/whisper-#{version}-macos-arm64.zip"
   name "Whisper"
   desc "Self-hosted desktop dictation"
-  homepage "https://github.com/softmaxe/whisper"
+  homepage "https://github.com/softmaxe/homebrew-tap/releases?q=whisper"
 
   livecheck do
-    url :url
-    strategy :github_latest
+    url "https://github.com/softmaxe/homebrew-tap.git"
+    regex(/^whisper-v(\d+\.\d+\.\d+)$/i)
   end
 
   depends_on arch: :arm64
+  depends_on formula: "ffmpeg"
   depends_on macos: :monterey
 
   app "Whisper.app"

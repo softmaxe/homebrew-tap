@@ -1,22 +1,21 @@
 class Gbat < Formula
   desc "Read Logitech GPW2 battery status on macOS"
-  homepage "https://github.com/softmaxe/gbat"
-  license "AGPL-3.0-only"
+  homepage "https://github.com/softmaxe/homebrew-tap"
+  url "https://github.com/softmaxe/homebrew-tap/releases/download/gbat-v0.0.5/gbat-v0.0.5-aarch64-apple-darwin.tar.gz"
+  sha256 "b8b7b805ad602bc61c94ba6fb51155bc4d0956766991e4eefcb022f8124b7b06"
+
+  livecheck do
+    url :homepage
+    strategy :git
+    regex(/^gbat-v(\d+\.\d+\.\d+)$/i)
+  end
 
   depends_on arch: :arm64
   depends_on :macos
 
-  on_macos do
-    on_arm do
-      url "https://github.com/softmaxe/gbat/releases/download/v0.0.4/gbat-v0.0.4-aarch64-apple-darwin.tar.gz"
-      sha256 "e37f24e53a8a5c4ea5f4b18fd4da3e4e216d35df885000ac3198e7b837eecb18"
-    end
-  end
-
   def install
     bin.install "gbat"
-    prefix.install "LICENSE"
-    prefix.install "THIRD_PARTY_NOTICES.md" if (buildpath/"THIRD_PARTY_NOTICES.md").file?
+    prefix.install "THIRD_PARTY_NOTICES.md", "rust-licenses"
   end
 
   test do
